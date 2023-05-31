@@ -727,6 +727,7 @@ margin-bottom: 72px;
    0px 1px 3px rgba(0, 0, 0, 0.12),
    0px 2px 1px rgba(0, 0, 0, 0.2); 
    border-radius: 4px;
+   padding: 24px;
    transition: transform var(--transition-duration-and-func);
 }  
 
@@ -767,5 +768,61 @@ margin-bottom: 72px;
 } 
 *//
 
+.contact-form-field-wrapper,
+.contact-form-checkboox-wrapper {
+display: block;
+margin-bottom: 20px;
+}
+
+.contact-form-input-wrapper {
+position: relative;
+display: block;
+  
+}
 
 
+
+.contact-form-input {
+width: 360px;
+height: 58px;
+border: 1px solid;
+border-radius: 4px;
+padding-left: 38px;
+
+}
+
+.contact-form-field-desc {
+ display: block;
+ font-size: 12px;
+ color: ;
+ margin-bottom: ; 
+
+}
+
+.contact-form-input:focus {
+outline: none;
+border-color: ;
+
+
+}
+
+
+.contact-form-input-icon {
+position: absolute;
+top: 50%;
+left: 16px;
+display: block;
+transform: translate(-50%);
+width: 18px;
+height: 24px;
+background-color: ;
+
+
+}
+
+
+.contact-form-input:focus + .contact-form-input-icon {
+background-color: ;
+/*== потрібно через fill==*/
+
+}
