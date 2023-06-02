@@ -584,6 +584,7 @@ transition: background-color var(--transition-duration-and-func);
 }
 
 
+
 .contact-form-input {
     box-sizing: border-box; 
     width: 264px;
@@ -605,7 +606,6 @@ transition: background-color var(--transition-duration-and-func);
   
 .contact-form-input:hover,
 .contact-form-input:focus {  
-  padding: 5px;
   border-color: #4D5AE5;
   outline: transparent;  
 } 
