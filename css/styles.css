@@ -812,9 +812,9 @@ margin-bottom: 72px;
    0px 1px 3px rgba(0, 0, 0, 0.12),
    0px 2px 1px rgba(0, 0, 0, 0.2); 
    border-radius: 4px;
-   padding: 24px;
+   padding: 72px 24px 24px 24px; 
    transition: transform var(--transition-duration-and-func);
-}  
+}   
 
 .modal-close-btn {
   position: absolute;
@@ -848,11 +848,7 @@ margin-bottom: 72px;
 
 }  
 
-//*.modal-close-icon:hover,
-.modal-close-icon:focus {
-  fill: #ffffff;
-} 
-*//
+
 .form-title { 
   display: block;
   margin-bottom: 16px;     
@@ -864,16 +860,17 @@ margin-bottom: 72px;
   color: var(--primary-text-main); 
 }   
 
-.form-group,
+//*.form-group,
 .form-comments,
 .form-policy-group,
 .form-textarea {
   display: block;
-  margin-bottom: 8px; 
-} 
+  
+}*//
 
 .form-group {
-  position: relative;
+  margin-bottom: 8px; 
+  //*position: relative;*//
 }
 
 .form-label {
@@ -881,16 +878,22 @@ margin-bottom: 72px;
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8E8F99; 
 }
 
+.form-group-input {
+ position: relative;
+}
+
 .form-input {
   width: 100%;
-  padding: 11px 11px 11px 38px ;
+  height: 40px;
+  padding-left: 38px; 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
   outline: transparent;
   transition: border-color var(--transition-duration-and-func);
 }
@@ -902,40 +905,53 @@ margin-bottom: 72px;
 
 .form-icon {
   position: absolute;
-  bottom: 8px; 
-  left: 8px; 
+  left: 16px;
+  top: 50%;
   color: #2E2F42;
   transition: fill var(--transition-duration-and-func);
 }  
-.form-group:hover .form-icon,
-.form-group:focus .form-icon {
+
+.form-input:hover .form-icon,
+.form-input:focus .form-icon {
   fill: #4D5AE5;
-}    
-  
+} 
+
+.form-group-comment {
+  margin-bottom: 16px;
+ }
+    
 .form-textarea { 
   width: 100%;  
   height: 120px; 
-  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4); 
+  padding: 8px 16px;
   box-sizing: border-box;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent; 
   outline: transparent;
-  transition: border var(--transition-duration-and-func);
+  resize: none;
+  transition: border-color var(--transition-duration-and-func);
 }  
 
 .form-textarea:hover,
 .form-textarea:focus {
-  border: 1px solid #4D5AE5; 
+  border-color: #4D5AE5;   
 }
 
 .form-textarea::placeholder {
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4); 
+  color: rgba(46, 47, 66, 0.4);  
 }
+
+.form-group-checkbox {
+  margin-bottom: 24px; 
+}
+
 
 
 .form-policy-group {
@@ -957,43 +973,45 @@ margin-bottom: 72px;
   margin: -1px;
 }
 
+.form-policy-desc {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8E8F99;
+  
+}
+
 .custom-checkbox {
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 2px;
-  outline: 2px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   outline-offset: -2px;
-  transition: background-color var(--transition-duration-and-func), outline var(--transition-duration-and-func);
+  fill: transparent; 
+  transition: background-color var(--transition-duration-and-func), border var(--transition-duration-and-func);
   }
  
 .checkbox:checked+.custom-checkbox{
- background-color: #404BBF;
- outline: 1px solid #404BBF; 
-
+ background-color: #404bbf;
+ border: none;
+ fill: #ffffff;
 } 
-
+ 
 .custom-checkbox-icon {
   opacity: 0;
   transition: opacity var(--transition-duration-and-func);
 }
 
-.checkbox:checked + .custom-checkbox  
+//*.checkbox:checked + .custom-checkbox  
 .custom-checkbox-icon {
   opacity: 1;
 }
-
-.form-policy-desc {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-  color: #8E8F99;
-  
-}
+ *//
 
 .link-form-policy-desc{
   color: #4D5AE5;
@@ -1003,7 +1021,7 @@ margin-bottom: 72px;
   display: block;
   margin: auto;
   margin-top: 24px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   padding: 16px 32px;
   gap: 10px;
@@ -1013,12 +1031,13 @@ margin-bottom: 72px;
   border: none; 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1,5;  
+  line-height: 1.5;  
   display: flex; 
   align-items: center;
   text-align: center;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.04em; 
  color: #FFFFFF; 
+ cursor: pointer;
 transition: background-color var(--transition-duration-and-func);
 }   
  
