@@ -888,10 +888,10 @@ margin-bottom: 72px;
   outline: transparent;
   transition: border-color var(--transition-duration-and-func);
 }
-.form-input:hover,
+
 .form-input:focus {  
   outline: 0;
-  border-color: #4D5AE5;
+  border-color: #4D5AE5; 
 } 
 
 .form-icon {
@@ -903,9 +903,8 @@ margin-bottom: 72px;
   transition: fill var(--transition-duration-and-func);
 }  
 
-.form-group-input:hover .form-icon,
-.form-group-input:focus .form-icon { 
-  fill: #4D5AE5;  
+.form-input:focus .form-icon {  
+  fill: #4D5AE5;   
 } 
 
 .form-group-comment {
@@ -950,14 +949,6 @@ margin-bottom: 72px;
   justify-content: center;
 }
 
-//*.form-policy-desc {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8E8F99;
-  
-}*//
  
 .form-policy-desc {  
   font-size: 12px;
