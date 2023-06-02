@@ -970,26 +970,27 @@ margin-bottom: 72px;
   overflow: hidden; 
 }
 
-.form-policy-desc {
+//*.form-policy-desc {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8E8F99;
   
-}
+}*//
+
+.form-policy-desc {  
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8E8F99; 
+   
+} 
 
 .link-form-policy-desc{
   color:#4d5ae5;
 } 
 
-.form-policy-label {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8E8F99; 
-  
-}
 
 .custom-checkbox {
   width: 16px;
