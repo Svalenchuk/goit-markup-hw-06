@@ -583,7 +583,7 @@ transition: background-color var(--transition-duration-and-func);
 }
 
 .contact-form-label {
-  gap 24px;
+  gap: 24px;
 }  
 
 .contact-form-input {
@@ -597,8 +597,8 @@ transition: background-color var(--transition-duration-and-func);
     background-color: transparent;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1,5;
-    letter-spacing: 0.04em;
+    line-height: 1.5;
+    letter-spacing: 0.04em; 
     padding-left: 16px;
     color: #FFFFFF;
     transition: border-color var(--transition-duration-and-func);
