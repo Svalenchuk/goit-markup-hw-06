@@ -950,19 +950,6 @@ margin-bottom: 72px;
   justify-content: center;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden; 
-}
-
 //*.form-policy-desc {
   font-weight: 400;
   font-size: 12px;
@@ -971,19 +958,23 @@ margin-bottom: 72px;
   color: #8E8F99;
   
 }*//
-
+ 
 .form-policy-desc {  
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8E8F99; 
+  color: #8e8f99;  
    
 } 
 
-.link-form-policy-desc{
+.link-form-policy-desc {
   color:#4d5ae5;
 } 
 
+.checkbox {
+appearance: none;
+position: absolute; 
+}
 
 .custom-checkbox {
   width: 16px;
