@@ -519,6 +519,10 @@ fill: #404BBF;
   color: #F4F4FD; 
 }
 
+.footer-box {
+margin-right: 80px; 
+} 
+
 .footer-social-text {
   font-weight: 500; 
   font-size: 16px;
@@ -556,6 +560,83 @@ transition: background-color var(--transition-duration-and-func);
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: #31D0AA;
+}
+
+.contact-form-wrapper {
+  display: flex;
+  flex-direction: column;
+} 
+
+.contact-form {
+  display: flex;
+ justify-items: flex-start;
+ 
+} 
+
+.contact-form-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-hero-footer);
+    margin-bottom: 16px; 
+}
+
+.contact-form-input {
+    box-sizing: border-box; 
+    width: 264px;
+    height: 40px; 
+    margin-right: 24px;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2E2F42;
+    color: #FFFFFF;
+    transition: border-color var(--transition-duration-and-func);
+    
+} 
+  
+.contact-form-input:hover,
+.contact-form-input:focus {  
+  padding: 5px;
+  border-color: #4D5AE5;
+  outline: transparent;  
+} 
+ 
+.contact-form-input::placeholder{ 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    letter-spacing: 0.04em;  
+    color: #FFFFFF;
+    outline: transparent; 
+}
+
+.contact-form-button {
+    width: 165px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 24px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    border: none;
+  } 
+
+
+.contact-form-icon {
+  margin-left: 16px;
 }
    
 
@@ -740,6 +821,7 @@ margin-bottom: 72px;
   align-items: center;
   width: 24px;
   height: 24px;
+  margin-bottom: 24px; 
   border-radius: 50%;
   background-color: #E7E9FC;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -767,62 +849,179 @@ margin-bottom: 72px;
   fill: #ffffff;
 } 
 *//
+.form-title { 
+  display: block;
+  margin-bottom: 16px;     
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-main); 
+}   
 
-.contact-form-field-wrapper,
-.contact-form-checkboox-wrapper {
-display: block;
-margin-bottom: 20px;
+.form-group,
+.form-comments,
+.form-policy-group,
+.form-textarea {
+  display: block;
+  margin-bottom: 8px; 
+} 
+
+.form-group {
+  position: relative;
 }
 
-.contact-form-input-wrapper {
-position: relative;
-display: block;
+.form-label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: #8E8F99; 
+}
+
+.form-input {
+  width: 100%;
+  padding: 11px 11px 11px 38px ;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  outline: transparent;
+  transition: border-color var(--transition-duration-and-func);
+}
+.form-input:hover,
+.form-input:focus {
+  outline: 0;
+  border-color: #4D5AE5;
+} 
+
+.form-icon {
+  position: absolute;
+  bottom: 8px; 
+  left: 8px; 
+  color: #2E2F42;
+  transition: fill var(--transition-duration-and-func);
+}  
+.form-group:hover .form-icon,
+.form-group:focus .form-icon {
+  fill: #4D5AE5;
+}    
+  
+.form-textarea { 
+  width: 100%;  
+  height: 120px; 
+  padding: 12px 16px;
+  box-sizing: border-box;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  outline: transparent;
+  transition: border var(--transition-duration-and-func);
+}  
+
+.form-textarea:hover,
+.form-textarea:focus {
+  border: 1px solid #4D5AE5; 
+}
+
+.form-textarea::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4); 
+}
+
+
+.form-policy-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; 
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.custom-checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  outline: 2px solid rgba(46, 47, 66, 0.4);
+  outline-offset: -2px;
+  transition: background-color var(--transition-duration-and-func), outline var(--transition-duration-and-func);
+  }
+ 
+.checkbox:checked+.custom-checkbox{
+ background-color: #404BBF;
+ outline: 1px solid #404BBF; 
+
+} 
+
+.custom-checkbox-icon {
+  opacity: 0;
+  transition: opacity var(--transition-duration-and-func);
+}
+
+.checkbox:checked + .custom-checkbox  
+.custom-checkbox-icon {
+  opacity: 1;
+}
+
+.form-policy-desc {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #8E8F99;
   
 }
 
-
-
-.contact-form-input {
-width: 360px;
-height: 58px;
-border: 1px solid;
-border-radius: 4px;
-padding-left: 38px;
-
+.link-form-policy-desc{
+  color: #4D5AE5;
 }
-
-.contact-form-field-desc {
- display: block;
- font-size: 12px;
- color: ;
- margin-bottom: ; 
-
+ 
+.submit-btn {
+  display: block;
+  margin: auto;
+  margin-top: 24px;
+  width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  gap: 10px;
+  background-color: #4D5AE5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none; 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1,5;  
+  display: flex; 
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+ color: #FFFFFF; 
+transition: background-color var(--transition-duration-and-func);
+}   
+ 
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #404BBF;
 }
-
-.contact-form-input:focus {
-outline: none;
-border-color: ;
+ 
 
 
-}
-
-
-.contact-form-input-icon {
-position: absolute;
-top: 50%;
-left: 16px;
-display: block;
-transform: translate(-50%);
-width: 18px;
-height: 24px;
-background-color: ;
-
-
-}
-
-
-.contact-form-input:focus + .contact-form-input-icon {
-background-color: ;
-/*== потрібно через fill==*/
-
-}
