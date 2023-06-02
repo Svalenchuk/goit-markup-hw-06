@@ -869,10 +869,9 @@ margin-bottom: 72px;
 }*//
 
 .form-group {
-  margin-bottom: 8px;  
-  
-}
-
+ margin-bottom: 8px;
+ }   
+ 
 .form-label {
   display: block;
   margin-bottom: 4px;
@@ -907,13 +906,14 @@ margin-bottom: 72px;
   position: absolute;
   left: 16px;
   top: 50%;
-  color: #2E2F42;
+  transform: translateY(-50%); 
+  color: #2E2F42; 
   transition: fill var(--transition-duration-and-func);
 }  
 
-.form-input:hover .form-icon,
-.form-input:focus .form-icon {
-  fill: #4D5AE5;
+.form-group-input:hover .form-icon,
+.form-group-input:focus .form-icon {
+  fill: #4D5AE5; 
 } 
 
 .form-group-comment {
