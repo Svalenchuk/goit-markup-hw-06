@@ -981,20 +981,24 @@ position: absolute;
   transition: background-color var(--transition-duration-and-func), border var(--transition-duration-and-func), fill var(--transition-duration-and-func);
   }
  
-.checkbox:checked +.custom-checkbox{
+//*.checkbox:checked +.custom-checkbox{
  background-color: #404bbf;
  border: none;
  fill: #ffffff;
-}  
+}  *// 
  
 .custom-checkbox-icon {
   opacity: 0;
+  cursor: pointer; 
   transition: opacity var(--transition-duration-and-func);
 }
 
-.checkbox:checked + .custom-checkbox  
-.custom-checkbox-icon {
-  opacity: 1;
+.checkbox:checked + .form-policy-desc  
+.custom-checkbox {
+  background-color:#404bbf;
+  border: none;
+  fill: #ffffff; 
+
 }
   
 .submit-btn {
