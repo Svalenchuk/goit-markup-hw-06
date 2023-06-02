@@ -867,6 +867,7 @@ margin-bottom: 72px;
 }*//
 
 .form-group {
+  display: block;
  margin-bottom: 8px;
  }   
  
@@ -895,7 +896,7 @@ margin-bottom: 72px;
   transition: border-color var(--transition-duration-and-func);
 }
 .form-input:hover,
-.form-input:focus {
+.form-input:focus {  
   outline: 0;
   border-color: #4D5AE5;
 } 
@@ -905,13 +906,13 @@ margin-bottom: 72px;
   left: 16px;
   top: 50%;
   transform: translateY(-50%); 
-  color: #2E2F42; 
+  fill: #2E2F42; 
   transition: fill var(--transition-duration-and-func);
 }  
 
 .form-group-input:hover .form-icon,
-.form-group-input:focus .form-icon {
-  fill: #4D5AE5; 
+.form-group-input:focus .form-icon { 
+  fill: #4D5AE5;  
 } 
 
 .form-group-comment {
