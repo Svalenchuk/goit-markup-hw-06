@@ -858,18 +858,11 @@ margin-bottom: 72px;
   color: var(--primary-text-main); 
 }   
 
-//*.form-group,
-.form-comments,
-.form-policy-group,
-.form-textarea {
-  display: block;
-  
-}*//
-
-.form-group {
-  display: block;
- margin-bottom: 8px;
+.form-group { 
+ display: block;
+ margin-bottom: 8px; 
  }   
+
  
 .form-label {
   display: block;
