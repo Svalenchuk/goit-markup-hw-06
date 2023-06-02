@@ -570,6 +570,7 @@ transition: background-color var(--transition-duration-and-func);
 .contact-form {
   display: flex;
  justify-items: flex-start;
+ gap: 24px;
  
 } 
 
@@ -582,9 +583,6 @@ transition: background-color var(--transition-duration-and-func);
     margin-bottom: 16px;  
 }
 
-.contact-form-label {
-  gap: 24px;
-}  
 
 .contact-form-input {
     box-sizing: border-box; 
