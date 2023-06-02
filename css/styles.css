@@ -903,7 +903,7 @@ margin-bottom: 72px;
   transition: fill var(--transition-duration-and-func);
 }  
 
-.form-input:focus .form-icon {  
+.form-input:focus + .form-icon {  
   fill: #4D5AE5;   
 } 
 
@@ -981,11 +981,6 @@ position: absolute;
   transition: background-color var(--transition-duration-and-func), border var(--transition-duration-and-func), fill var(--transition-duration-and-func);
   }
  
-//*.checkbox:checked +.custom-checkbox{
- background-color: #404bbf;
- border: none;
- fill: #ffffff;
-}  *// 
  
 .custom-checkbox-icon {
   opacity: 0;
